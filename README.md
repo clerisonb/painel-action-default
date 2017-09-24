@@ -1,4 +1,4 @@
-# Painel padrao Action!
+# Painel padrão Action!
 Painel padrão para sistemas web.
 
 Incluso:
