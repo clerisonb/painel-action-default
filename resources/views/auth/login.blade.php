@@ -7,10 +7,11 @@
   <body class="hold-transition login-page">
   <div class="login-box">
     <div class="login-logo">
-      <a href="#"><b>Action</b> S.T.</a>
+      {{--<a href="#"><b>Action</b> S.T.</a>--}}
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
+        <h2 align="center">Action! Solucoes Tecnologicas</h2>
       <p class="login-box-msg">Entre para iniciar a sessão</p>
 
       <form action="{{ route('autenticar') }}" method="post">

@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   |               | sidebar-mini                            |
   |---------------------------------------------------------|
   -->
-  <body class="hold-transition fixed skin-purple-light sidebar-mini">
+  <body class="hold-transition fixed skin-purple sidebar-mini">
   <div class="wrapper">
     <!-- Main Header -->
     @include('layouts._sistema._header._index')

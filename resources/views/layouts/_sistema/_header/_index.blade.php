@@ -6,7 +6,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>A</b>!</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Action</b>ST</span>
+        <span class="logo-lg"><b>Action</b> ST</span>
     </a>
 
     <!-- Header Navbar -->

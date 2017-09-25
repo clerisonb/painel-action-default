@@ -20,9 +20,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
 	Route::get('/', ['as'=>'admin.index', 'uses'=>'Admin\UsuarioController@index']);
 	Route::get('/logout', ['as'=>'admin.logout', 'uses'=>'Admin\UsuarioController@logout']);
 
-	Route::get('/post', ['as'=>'post.list', 'uses'=> 'Admin\PostController@listar']);
-	Route::get('/post/adcionar', ['as'=>'post.add', 'uses'=> 'Admin\PostController@adicionar']);
-	Route::get('/categorias', ['as'=>'category.list', 'uses'=> 'Admin\CategoriaController@listar']);
+	Route::get('/posts', ['as'=>'post.listar', 'uses'=> 'Admin\PostController@listar']);
+	Route::get('/posts/adcionar', ['as'=>'post.adicionar', 'uses'=> 'Admin\PostController@adicionar']);
+
+	Route::get('/categorias', ['as'=>'categoria.listar', 'uses'=> 'Admin\CategoriaController@listar']);
 });
 
 

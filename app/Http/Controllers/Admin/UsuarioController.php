@@ -11,15 +11,17 @@ use Illuminate\Support\Facades\Hash;
 class UsuarioController extends Controller
 {
 
-    public function login () {
-	    return view('auth.login');
-	}
 	public function index(){
-	    return view('layouts.sistema', compact('title'));
+	    return view('sistema.dashboard', compact('title'));
 	}
+
+    public function login () {
+        return view('auth.login');
+    }
 
 	public function logout(){
 	    Auth::logout();
+	    return redirect()->route('login');
     }
 
 	public function autenticar(Request $request){
