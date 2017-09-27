@@ -20,10 +20,6 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function(){
 	Route::get('/', ['as'=>'admin.index', 'uses'=>'Admin\UsuarioController@index']);
 	Route::get('/logout', ['as'=>'admin.logout', 'uses'=>'Admin\UsuarioController@logout']);
 
-	Route::get('/posts', ['as'=>'post.listar', 'uses'=> 'Admin\PostController@listar']);
-	Route::get('/posts/adcionar', ['as'=>'post.adicionar', 'uses'=> 'Admin\PostController@adicionar']);
-
-	Route::get('/categorias', ['as'=>'categoria.listar', 'uses'=> 'Admin\CategoriaController@listar']);
 });
 
 

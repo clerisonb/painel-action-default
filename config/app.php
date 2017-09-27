@@ -177,7 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Kodeine\Acl\AclServiceProvider::class
+        Kodeine\Acl\AclServiceProvider::class,
+        Nwidart\Modules\LaravelModulesServiceProvider::class,
+        Modules\Blog\Providers\BlogServiceProvider::class
 
     ],
 
@@ -228,7 +230,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'acl' => 'Kodeine\Acl\Middleware\HasPermission'
+        'acl' => Kodeine\Acl\Middleware\HasPermission::class,
+        'Module' => Nwidart\Modules\Facades\Module::class
 
     ],
 
